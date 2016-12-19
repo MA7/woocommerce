@@ -291,7 +291,6 @@ function wc_check_if_attribute_name_is_reserved( $attribute_name ) {
  * Callback for array filter to get visible only.
  *
  * @since  2.7.0
- * @param  WC_Product $product
  * @return bool
  */
 function wc_attributes_array_filter_visible( $attribute ) {
@@ -302,7 +301,6 @@ function wc_attributes_array_filter_visible( $attribute ) {
  * Callback for array filter to get variation attributes only.
  *
  * @since  2.7.0
- * @param  WC_Product $product
  * @return bool
  */
 function wc_attributes_array_filter_variation( $attribute ) {

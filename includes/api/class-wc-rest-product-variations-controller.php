@@ -608,7 +608,6 @@ class WC_REST_Product_Variations_Controller extends WC_REST_Products_Controller 
 	/**
 	 * Prepare links for the request.
 	 *
-	 * @param WC_Product $product Product object.
 	 * @param WP_REST_Request $request Request object.
 	 * @return array Links for the given product.
 	 */

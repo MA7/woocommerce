@@ -264,6 +264,7 @@ class WC_Order extends WC_Abstract_Order {
 	/**
 	 * Updates status of order immediately. Order must exist.
 	 * @uses WC_Order::set_status()
+	 * @param string $new_status
 	 * @return bool success
 	 */
 	public function update_status( $new_status, $note = '', $manual = false ) {

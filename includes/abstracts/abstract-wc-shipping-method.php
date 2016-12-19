@@ -128,7 +128,7 @@ abstract class WC_Shipping_Method extends WC_Settings_API {
 	 *
 	 * Methods should override this to declare support (or lack of support) for a feature.
 	 *
-	 * @param $feature string The name of a feature to test support for.
+	 * @param string $feature string The name of a feature to test support for.
 	 * @return bool True if the shipping method supports the feature, false otherwise.
 	 */
 	public function supports( $feature ) {

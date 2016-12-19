@@ -99,7 +99,7 @@ class WC_Product_Factory {
 	 *
 	 * @since 2.7.0
 	 * @param  mixed $product
-	 * @return int|bool false on failure
+	 * @return integer false on failure
 	 */
 	private function get_product_id( $product ) {
 		if ( is_numeric( $product ) ) {

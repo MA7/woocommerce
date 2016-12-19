@@ -83,7 +83,7 @@ class WC_Customer extends WC_Legacy_Customer {
 	 * If $customer is 'new', you can build a new WC_Customer object. If it's empty, some
 	 * data will be pulled from the session for the current user/customer.
 	 *
-	 * @param WC_Customer|int $data Customer ID or data.
+	 * @param integer $data Customer ID or data.
 	 * @param bool $is_session True if this is the customer session
 	 * @throws Exception if customer cannot be read/found and $data is set.
 	 */
@@ -224,7 +224,7 @@ class WC_Customer extends WC_Legacy_Customer {
 	/**
 	 * Is customer VAT exempt?
 	 *
-	 * @return bool
+	 * @return string
 	 */
 	public function is_vat_exempt() {
 		return $this->get_is_vat_exempt();
@@ -233,7 +233,7 @@ class WC_Customer extends WC_Legacy_Customer {
 	/**
 	 * Has calculated shipping?
 	 *
-	 * @return bool
+	 * @return string
 	 */
 	public function has_calculated_shipping() {
 		return $this->get_calculated_shipping();
@@ -243,7 +243,7 @@ class WC_Customer extends WC_Legacy_Customer {
 	 * Get if customer is VAT exempt?
 	 *
 	 * @since 2.7.0
-	 * @return bool
+	 * @return string
 	 */
 	public function get_is_vat_exempt() {
 		return $this->is_vat_exempt;
@@ -261,8 +261,7 @@ class WC_Customer extends WC_Legacy_Customer {
 	/**
 	 * Has customer calculated shipping?
 	 *
-	 * @param  string $context
-	 * @return bool
+	 * @return string
 	 */
 	public function get_calculated_shipping() {
 		return $this->calculated_shipping;

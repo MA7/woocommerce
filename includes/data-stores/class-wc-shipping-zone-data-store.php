@@ -85,7 +85,7 @@ class WC_Shipping_Zone_Data_Store extends WC_Data_Store_WP implements WC_Shippin
 	 * @since  2.7.0
 	 * @param  WC_Shipping_Zone
 	 * @param  array $args Array of args to pass to the delete method.
-	 * @return bool result
+	 * @return boolean|null result
 	 */
 	public function delete( &$zone, $args = array() ) {
 		if ( $zone->get_id() ) {

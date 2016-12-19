@@ -74,7 +74,7 @@ abstract class WC_Data {
 
 	/**
 	 * Default constructor.
-	 * @param int|object|array $read ID to load from the DB (optional) or already queried data.
+	 * @param integer $read ID to load from the DB (optional) or already queried data.
 	 */
 	public function __construct( $read = 0 ) {
 		$this->default_data = $this->data;
@@ -273,7 +273,7 @@ abstract class WC_Data {
 	/**
 	 * Delete meta data.
 	 * @since 2.6.0
-	 * @param array $key Meta key
+	 * @param string $key Meta key
 	 */
 	public function delete_meta_data( $key ) {
 		$this->maybe_read_meta_data();

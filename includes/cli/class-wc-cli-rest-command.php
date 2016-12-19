@@ -198,6 +198,7 @@ class WC_CLI_REST_Command {
 	 * Do a REST Request
 	 *
 	 * @param string $method
+	 * @param string $route
 	 *
 	 */
 	private function do_request( $method, $route, $assoc_args ) {

@@ -40,7 +40,7 @@ if ( ! function_exists( 'wc_create_new_customer' ) ) {
 	 * @param  string $email Customer email.
 	 * @param  string $username Customer username.
 	 * @param  string $password Customer password.
-	 * @return int|WP_Error Returns WP_Error on failure, Int (user ID) on success.
+	 * @return integer Returns WP_Error on failure, Int (user ID) on success.
 	 */
 	function wc_create_new_customer( $email, $username = '', $password = '' ) {
 
@@ -448,7 +448,7 @@ function wc_get_customer_available_downloads( $customer_id ) {
 /**
  * Get total spent by customer.
  * @param  int $user_id
- * @return string
+ * @return double
  */
 function wc_get_customer_total_spent( $user_id ) {
 	$customer = new WC_Customer( $user_id );

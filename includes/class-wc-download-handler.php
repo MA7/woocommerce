@@ -178,7 +178,7 @@ class WC_Download_Handler {
 	/**
 	 * Parse file path and see if its remote or local.
 	 * @param  string $file_path
-	 * @return array
+	 * @return string
 	 */
 	public static function parse_file_path( $file_path ) {
 		$wp_uploads     = wp_upload_dir();

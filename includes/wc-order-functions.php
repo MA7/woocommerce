@@ -353,7 +353,7 @@ function wc_orders_count( $status ) {
  * @param  int|WC_Product $product
  * @param  WC_Order $order the order
  * @param  int $qty purchased
- * @return int|bool insert id or false on failure
+ * @return integer insert id or false on failure
  */
 function wc_downloadable_file_permission( $download_id, $product, $order, $qty = 1 ) {
 	if ( is_numeric( $product ) ) {
@@ -419,7 +419,7 @@ add_action( 'woocommerce_order_status_processing', 'wc_downloadable_product_perm
 /**
  * Clear all transients cache for order data.
  *
- * @param int|WC_Order $order
+ * @param integer $order
  */
 function wc_delete_shop_order_transients( $order = 0 ) {
 	if ( is_numeric( $order ) ) {

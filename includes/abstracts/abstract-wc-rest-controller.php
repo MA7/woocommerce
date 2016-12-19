@@ -247,7 +247,7 @@ abstract class WC_REST_Controller extends WP_REST_Controller {
 	 * Validate image_width based settings.
 	 *
 	 * @since 2.7.0
-	 * @param array $value
+	 * @param array $values
 	 * @param array $setting
 	 * @return string|WP_Error
 	 */

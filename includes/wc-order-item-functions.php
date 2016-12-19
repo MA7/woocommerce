@@ -89,8 +89,8 @@ function wc_delete_order_item( $item_id ) {
  * WooCommerce Order Item Meta API - Update term meta.
  *
  * @access public
- * @param mixed $item_id
- * @param mixed $meta_key
+ * @param integer $item_id
+ * @param string $meta_key
  * @param mixed $meta_value
  * @param string $prev_value (default: '')
  * @return bool
@@ -110,7 +110,7 @@ function wc_update_order_item_meta( $item_id, $meta_key, $meta_value, $prev_valu
  *
  * @access public
  * @param mixed $item_id
- * @param mixed $meta_key
+ * @param string $meta_key
  * @param mixed $meta_value
  * @param bool $unique (default: false)
  * @return int New row ID or 0

@@ -32,6 +32,7 @@ interface WC_Order_Item_Data_Store_Interface {
 	/**
 	 * Delete an order item.
 	 * @param int $item_id
+	 * @return void
 	 */
 	public function delete_order_item( $item_id );
 

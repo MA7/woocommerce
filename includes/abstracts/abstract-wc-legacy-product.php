@@ -281,7 +281,7 @@ abstract class WC_Abstract_Legacy_Product extends WC_Data {
 	 * @deprecated 2.7.0 Use wc_get_price_including_tax instead.
 	 * @param  int $qty
 	 * @param  string $price to calculate, left blank to just use get_price()
-	 * @return string
+	 * @return double
 	 */
 	public function get_price_including_tax( $qty = 1, $price = '' ) {
 		wc_deprecated_function( 'WC_Product::get_price_including_tax', '2.7', 'wc_get_price_including_tax' );
@@ -294,7 +294,7 @@ abstract class WC_Abstract_Legacy_Product extends WC_Data {
 	 * @deprecated 2.7.0 Use wc_get_price_to_display instead.
 	 * @param  string  $price to calculate, left blank to just use get_price()
 	 * @param  integer $qty   passed on to get_price_including_tax() or get_price_excluding_tax()
-	 * @return string
+	 * @return double
 	 */
 	public function get_display_price( $price = '', $qty = 1 ) {
 		wc_deprecated_function( 'WC_Product::get_display_price', '2.7', 'wc_get_price_to_display' );
@@ -308,7 +308,7 @@ abstract class WC_Abstract_Legacy_Product extends WC_Data {
 	 * @deprecated 2.7.0 Use wc_get_price_excluding_tax instead.
 	 * @param  int $qty
 	 * @param  string $price to calculate, left blank to just use get_price()
-	 * @return string
+	 * @return double
 	 */
 	public function get_price_excluding_tax( $qty = 1, $price = '' ) {
 		wc_deprecated_function( 'WC_Product::get_price_excluding_tax', '2.7', 'wc_get_price_excluding_tax' );
@@ -347,7 +347,7 @@ abstract class WC_Abstract_Legacy_Product extends WC_Data {
 	 * @param string $sep (default: ', ').
 	 * @param string $before (default: '').
 	 * @param string $after (default: '').
-	 * @return array
+	 * @return string
 	 */
 	public function get_tags( $sep = ', ', $before = '', $after = '' ) {
 		wc_deprecated_function( 'WC_Product::get_tags', '2.7', 'wc_get_product_tag_list' );

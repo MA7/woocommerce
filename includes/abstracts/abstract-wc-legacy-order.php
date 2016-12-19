@@ -42,7 +42,6 @@ abstract class WC_Abstract_Legacy_Order extends WC_Data {
 
 	/**
 	 * Add a tax row to the order.
-	 * @param array $args
 	 * @param int $tax_amount amount of tax.
 	 * @param int $shipping_tax_amount shipping amount.
 	 * @return int order item ID

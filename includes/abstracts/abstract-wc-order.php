@@ -88,7 +88,7 @@ abstract class WC_Abstract_Order extends WC_Abstract_Legacy_Order {
 	 * should be used. It is possible, but the aforementioned are preferred and are the only.
 	 * methods that will be maintained going forward.
 	 *
-	 * @param  int|object|WC_Order $order Order to read.
+	 * @param  integer $order Order to read.
 	 */
 	public function __construct( $order = 0 ) {
 		parent::__construct( $order );
@@ -944,7 +944,7 @@ abstract class WC_Abstract_Order extends WC_Abstract_Legacy_Order {
 	 * Calculate shipping total.
 	 *
 	 * @since 2.2
-	 * @return float
+	 * @return string
 	 */
 	public function calculate_shipping() {
 		$shipping_total = 0;
