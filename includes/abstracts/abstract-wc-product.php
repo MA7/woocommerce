@@ -101,7 +101,7 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * This class should NOT be instantiated, but the wc_get_product() function
 	 * should be used. It is possible, but the wc_get_product() is preferred.
 	 *
-	 * @param int|WC_Product|object $product Product to init.
+	 * @param integer $product Product to init.
 	 */
 	public function __construct( $product = 0 ) {
 		parent::__construct( $product );

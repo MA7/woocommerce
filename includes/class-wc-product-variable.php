@@ -31,7 +31,7 @@ class WC_Product_Variable extends WC_Product {
 	/**
 	 * Merges variable product data into the parent object.
 	 *
-	 * @param int|WC_Product|object $product Product to init.
+	 * @param integer $product Product to init.
 	 */
 	public function __construct( $product = 0 ) {
 		$this->data = array_merge( $this->data, $this->extra_data );

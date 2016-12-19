@@ -42,7 +42,7 @@ function wc_get_coupon_type( $type = '' ) {
  * Coupon types that apply to individual products. Controls which validation rules will apply.
  *
  * @since  2.5.0
- * @return array
+ * @return string
  */
 function wc_get_product_coupon_types() {
 	return (array) apply_filters( 'woocommerce_product_coupon_types', array( 'fixed_product', 'percent' ) );
@@ -52,7 +52,7 @@ function wc_get_product_coupon_types() {
  * Coupon types that apply to the cart as a whole. Controls which validation rules will apply.
  *
  * @since  2.5.0
- * @return array
+ * @return string
  */
 function wc_get_cart_coupon_types() {
 	return (array) apply_filters( 'woocommerce_cart_coupon_types', array( 'fixed_cart' ) );

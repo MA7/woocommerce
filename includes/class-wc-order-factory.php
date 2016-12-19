@@ -111,7 +111,7 @@ class WC_Order_Factory {
 	 *
 	 * @since 2.7.0
 	 * @param  mixed $order
-	 * @return int|bool false on failure
+	 * @return boolean false on failure
 	 */
 	public static function get_order_id( $order ) {
 		global $post;

@@ -315,7 +315,7 @@ class WC_Gateway_Paypal_Request {
 	 * Add PayPal Line Item.
 	 * @param  string  $item_name
 	 * @param  int     $quantity
-	 * @param  float   $amount
+	 * @param  integer   $amount
 	 * @param  string  $item_number
 	 * @return bool successfully added or not
 	 */

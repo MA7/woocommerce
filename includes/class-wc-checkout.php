@@ -259,7 +259,7 @@ class WC_Checkout {
 	 *
 	 * @throws Exception
 	 * @param  $data Posted data.
-	 * @return int|WP_ERROR
+	 * @return integer
 	 */
 	public function create_order( $data ) {
 		// Give plugins the opportunity to create an order themselves.

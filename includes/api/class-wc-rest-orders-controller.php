@@ -558,7 +558,6 @@ class WC_REST_Orders_Controller extends WC_REST_Posts_Controller {
 	/**
 	 * Create or update an order shipping method.
 	 *
-	 * @param $posted $shipping Item data.
 	 * @param string $action 'create' to add shipping or 'update' to update it.
 	 * @throws WC_REST_Exception Invalid data, server error.
 	 */

@@ -1590,7 +1590,7 @@ class WC_REST_Products_Controller extends WC_REST_Posts_Controller {
 	/**
 	 * Delete post.
 	 *
-	 * @param int|WP_Post $id Post ID or WP_Post instance.
+	 * @param integer $id Post ID or WP_Post instance.
 	 */
 	protected function delete_post( $id ) {
 		if ( ! empty( $id->ID ) ) {

@@ -58,7 +58,6 @@ abstract class WC_Legacy_Customer extends WC_Data {
 
 	/**
 	 * __set function.
-	 * @param mixed $property
 	 * @param mixed $key
 	 */
 	public function __set( $key, $value ) {

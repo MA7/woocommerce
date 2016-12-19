@@ -35,7 +35,7 @@ class WC_Order_Refund extends WC_Abstract_Order {
 	/**
 	 * Extend the abstract _data properties and then read the order object.
 	 *
-	 * @param int|object|WC_Order $read Order to init.
+	 * @param integer $read Order to init.
 	 */
 	 public function __construct( $read = 0 ) {
 		$this->data = array_merge( $this->data, $this->extra_data );
@@ -83,7 +83,7 @@ class WC_Order_Refund extends WC_Abstract_Order {
 	 * Get refunded amount.
 	 *
 	 * @param  string $context
-	 * @return int|float
+	 * @return double
 	 */
 	public function get_amount( $context = 'view' ) {
 		return $this->get_prop( 'amount', $context );

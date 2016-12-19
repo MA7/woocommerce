@@ -143,7 +143,7 @@ function wc_update_order( $args ) {
  * WC_TEMPLATE_DEBUG_MODE will prevent overrides in themes from taking priority.
  *
  * @access public
- * @param mixed $slug
+ * @param string $slug
  * @param string $name (default: '')
  */
 function wc_get_template_part( $slug, $name = '' ) {
@@ -1439,7 +1439,7 @@ add_action( 'wp_login', 'wc_maybe_store_user_agent', 10, 2 );
  *
  * @since 2.7.0
  * @param array      $list      List of objects or arrays
- * @param int|string $callback_or_field     Callback method from the object to place instead of the entire object
+ * @param string $callback_or_field     Callback method from the object to place instead of the entire object
  * @param int|string $index_key Optional. Field from the object to use as keys for the new array.
  *                              Default null.
  * @return array Array of values.

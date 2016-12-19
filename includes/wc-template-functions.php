@@ -353,7 +353,7 @@ function wc_product_post_class( $classes, $class = '', $post_id = '' ) {
  * Outputs hidden form inputs for each query string variable.
  * @since 2.7.0
  * @param array $values Name value pairs.
- * @param array $exclude Keys to exclude.
+ * @param string[] $exclude Keys to exclude.
  * @param string $current_key Current key we are outputting.
  */
 function wc_query_string_form_fields( $values = null, $exclude = array(), $current_key = '', $return = false ) {

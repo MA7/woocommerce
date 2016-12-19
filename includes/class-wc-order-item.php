@@ -48,7 +48,7 @@ class WC_Order_Item extends WC_Data implements ArrayAccess {
 
 	/**
 	 * Constructor.
-	 * @param int|object|array $item ID to load from the DB, or WC_Order_Item Object
+	 * @param integer $item ID to load from the DB, or WC_Order_Item Object
 	 */
 	public function __construct( $item = 0 ) {
 		$this->data = array_merge( $this->data, $this->extra_data );
@@ -167,7 +167,7 @@ class WC_Order_Item extends WC_Data implements ArrayAccess {
 
 	/**
 	 * Type checking
-	 * @param  string|array  $Type
+	 * @param  string|array  $type
 	 * @return boolean
 	 */
 	public function is_type( $type ) {
